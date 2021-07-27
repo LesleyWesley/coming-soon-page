@@ -1,0 +1,15 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-image:linear-gradient(135deg, #FFF, #FFF5F5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0 200px 0;
+  font-size: 1rem;
+  color: #CE9797;
+  margin: 0;
+  width: 100%;
+}
