@@ -7,9 +7,71 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 50px 0 200px 0;
+  padding: 35px 0 100px 0;
   font-size: 1rem;
   color: #CE9797;
   margin: 0;
   width: 100%;
+}
+
+/* LOGO SECTION - MOBILE */
+
+.logo-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  padding-bottom: 35px;
+}
+
+.logo-div img{
+  width: 35%;
+}
+
+/* HERO IMAGE SECTION - MOBILE */
+
+.image-div  {
+  background-image: url("../images/hero-mobile.jpg");
+  background-size: cover;
+  height: 250px;
+  width: 100%;
+}
+
+/* TEXT SECTION - MOBILE */
+
+.text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  padding-top: 50px;
+}
+
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.75em;
+  text-align: center;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  letter-spacing: .25em;
+}
+
+h1 span {
+  font-weight: 600;
+  color: #413A3A;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6em;
+  font-size: .92em;
 }
