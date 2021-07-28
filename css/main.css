@@ -75,3 +75,42 @@ p {
   line-height: 1.6em;
   font-size: .92em;
 }
+
+/* EMAIL INPUT SECTION - MOBILE */
+
+.email-validator {
+  border: 1px solid #CE9797;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 30px;
+}
+
+.email-validator input {
+  padding: 15px 50px 15px 20px;
+  border-radius: 30px;
+  border: none;
+  background: none;
+}
+
+.email-validator input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1em;
+  color: #CE9797;
+  opacity: .5;
+}
+
+button {
+  background-image: url("../images/icon-arrow.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 22px 30px;
+  border-radius: 30px;
+  margin-left: 10px;
+  border: none;
+  background-image: linear-gradient(135, #F8BFBF, #EE8C8C);
+
+
+}
