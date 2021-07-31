@@ -85,6 +85,7 @@ p {
   justify-content: space-between;
   width: 100%;
   border-radius: 30px;
+  margin-top: 25px;
 }
 
 .email-validator input {
@@ -112,4 +113,23 @@ button {
   margin-top: -1px;
   background-color: linear-gradient(135deg, #F8BFBF, #EE8C8C);
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.validate-message {
+  color: #ff6769;
+  text-align: left;
+  width: 90%;
+  font-size: .8em;
+}
+
+.active {
+  border: 1px solid  #ff6769;
+}
+
+.hide {
+  display: none;
 }
