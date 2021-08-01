@@ -32,7 +32,7 @@ body {
 
 .image-div  {
   background-image: url("../images/hero-mobile.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
   height: 300px;
@@ -65,6 +65,7 @@ h1 {
   line-height: 1.2em;
   margin-bottom: 0;
   letter-spacing: .25em;
+  max-width: 300px;
 }
 
 h1 span {
@@ -76,6 +77,11 @@ p {
   text-align: center;
   line-height: 1.6em;
   font-size: .92em;
+  max-width: 400px;
+}
+
+.image-div img {
+  display: none;
 }
 
 /* EMAIL INPUT SECTION - MOBILE */
@@ -88,6 +94,7 @@ p {
   width: 100%;
   border-radius: 30px;
   margin-top: 25px;
+  max-width: 400px;
 }
 
 .email-validator input {
@@ -140,69 +147,65 @@ button:hover {
 
 @media (min-width: 700px) {
 
-  body {
-    background-image: url("../images/bg-pattern-desktop.svg");
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: auto auto;
-    padding: 0 0 0 80px;
+  .logo-div img {
+    width: 25%;
   }
 
+  .image-div {
+    height: 500px;
+  }
+}
 
+@media (min-width: 1000px) {
+
+  body {
+    display: grid;
+    grid-template-columns: 57% 43%;
+    grid-template-rows: auto auto;
+    height: 100%;
+    padding: 0;
+
+  }
 
   .logo-div {
-    grid-column-start:1;
+    grid-column-start: 1;
     grid-column-end: 2;
-    padding: 50px 0;
-  }
-
-  .logo-div img {
-    width: 32%;
+    padding-top: 25px;
+    padding-left: 25px;
   }
 
   h1 {
     text-align: left;
-    padding-right: 100px;
+    margin-top: 0;
   }
 
   p {
-    width: 100%;
     text-align: left;
-    padding-top: 25px;
+    width: 100%;
   }
 
   .image-div {
-    background-image: url("../images/hero-desktop.jpg");
-    background-size: auto;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start:1;
-    grid-row-end: 3;
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     order: 2;
     height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .image-div img {
+    display: flex;
+    width: inherit;
   }
 
   .text-div {
+    order: 1;
     grid-column-start: 1;
     grid-column-end: 2;
-    order: 1;
-    margin-bottom: 100px;
-    justify-content: flex-start;
+
   }
-
-  .email-validator {
-    width: 100%;
-  }
-
-  .validate-message {
-    width: 92%;
-    padding-top: 0;
-  }
-
-}
-
-@media (min-width: 1000px) {
-  
 }
