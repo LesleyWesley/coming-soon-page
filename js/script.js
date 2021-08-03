@@ -14,6 +14,11 @@ const emailInput = document.querySelector("input");
 
 const emailDiv = document.querySelector(".email-validator");
 
+//Selects email validator error icon
+
+const errorIcon = document.querySelector(".email-validator img");
+console.log("hi");
+
 //Email Specifications
 
 const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -51,11 +56,14 @@ document.addEventListener("keydown", function (e) {
      validateMessage.classList.remove("hide");
      validateMessage.classList.add("success");
      emailDiv.classList.remove("active");
+     errorIcon.classList.add("hide");
    } else {
      validateMessage.classList.remove("hide");
      validateMessage.innerText = "Please provide a valid email";
      validateMessage.classList.remove("success");
      emailDiv.classList.add("active");
+     errorIcon.classList.remove("hide");
+
    }
  }
 
