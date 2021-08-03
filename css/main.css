@@ -41,7 +41,7 @@ body {
 
 /* TEXT SECTION - MOBILE */
 
-.text-div {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -218,7 +218,7 @@ button:active {
     width: inherit;
   }
 
-  .text-div {
+  main {
     order: 1;
     grid-column-start: 1;
     grid-column-end: 2;
