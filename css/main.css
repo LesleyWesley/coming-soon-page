@@ -149,7 +149,11 @@ button:active {
 }
 
 .hide {
-  opacity: 0;
+  display: none;
+}
+
+.success {
+  color: #CE9797;
 }
 
 /*------ TABLET STYLING ------- */

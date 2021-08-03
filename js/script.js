@@ -30,6 +30,11 @@ button.addEventListener("click", function () {
 
 //Adds validation of email when "enter" is hit
 
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    validateEmail();
+  }
+})
 
 
 
@@ -42,10 +47,14 @@ button.addEventListener("click", function () {
 
    if (email.match(mailformat)) {
      clearInput();
-     validateMessage.classList.add("hide");
+     validateMessage.innerText = "Success!  See you soon!";
+     validateMessage.classList.remove("hide");
+     validateMessage.classList.add("success");
      emailDiv.classList.remove("active");
    } else {
      validateMessage.classList.remove("hide");
+     validateMessage.innerText = "Please provide a valid email";
+     validateMessage.classList.remove("success");
      emailDiv.classList.add("active");
    }
  }
