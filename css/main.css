@@ -187,7 +187,7 @@ button:active {
     height: 100%;
     padding: 0;
     background-image: url("../images/bg-pattern-desktop.svg");
-    background-size: 65%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
 
